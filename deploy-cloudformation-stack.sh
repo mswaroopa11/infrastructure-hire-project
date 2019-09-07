@@ -5,7 +5,7 @@ echo "Run this deployment script everytime you would like to deploy the dockerfi
 cp ./app/* .
 
 # # create docker image from dockerfile, requirements.txt, app
-docker build --tag=infrastructure-hire-proj .
+docker build -t flaskdock .
 
 # # copies aren't necessary
 rm -rf app.py
@@ -21,3 +21,5 @@ rm -rf wsgi.py
 
 # run the cloudformation deploy
 #aws cloudformation deploy --template-file infrastructure/infrastructure.yml --stack-name ops-hire-project --tags Name=ops-hire-project Environment=dev
+
+
