@@ -38,3 +38,7 @@ Add what you feel could be missing from this project. Show us how you think abou
 # Feedback
 
 We love feedback. PR or create issues on this repository with feedback on what we could do better!
+
+# Run in Docker to test access to flask:
+$ docker run -p 5000:80 flaskdock
+run http://localhost:5000 in your browser to access. 
